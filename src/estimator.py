@@ -38,7 +38,7 @@ def estimator(data):
             "severeCasesByRequestedTime"]) // 1
 
         severeImpact["severeCasesByRequestedTime"] = (0.15 * severeImpact["infectionsByRequestedTime"]) // 1
-        severeImpact["hospitalBedsByRequestedTime"] = ((((int(data.get("totalHospitalBeds"))) * 0.925) * 0.35) -
+        severeImpact["hospitalBedsByRequestedTime"] = (((int(data.get("totalHospitalBeds"))) * 0.35) -
                                                        severeImpact["severeCasesByRequestedTime"]) // 1
 
         # End of Challenge 2
