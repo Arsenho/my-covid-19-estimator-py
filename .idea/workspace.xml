@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9f68605-3739-403d-8710-2dc270d7ab04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/actions/jest-out/action.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/actions/jest-out/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/actions/lhr-out/action.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/actions/lhr-out/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/actions/props-out/action.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/actions/props-out/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/gradr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gradr.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d9f68605-3739-403d-8710-2dc270d7ab04" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
