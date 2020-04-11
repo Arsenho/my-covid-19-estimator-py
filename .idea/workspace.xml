@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9f68605-3739-403d-8710-2dc270d7ab04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.eggs/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/EGG-INFO/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/EGG-INFO/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/EGG-INFO/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/EGG-INFO/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/EGG-INFO/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/more_itertools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/more_itertools/__init__.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/more_itertools/more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/more_itertools/more.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/more_itertools/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/more_itertools/recipes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/more_itertools-8.2.0-py3.7.egg/more_itertools/recipes.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/EGG-INFO/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/EGG-INFO/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/EGG-INFO/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/EGG-INFO/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/EGG-INFO/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/EGG-INFO/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/pluggy/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/pluggy/_tracing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/pluggy/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/pluggy/callers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/pluggy/hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pluggy-0.13.1-py3.7.egg/pluggy/manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/EGG-INFO/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/EGG-INFO/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/EGG-INFO/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/EGG-INFO/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/EGG-INFO/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/__metainfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_builtin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_code/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_code/_assertionnew.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_code/_assertionold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_code/_py2traceback.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_code/assertion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_code/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_code/source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_io/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_io/capture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_io/saferepr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_io/terminalwriter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_log/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_log/log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_log/warning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_path/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_path/cacheutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_path/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_path/local.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_path/svnurl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_path/svnwc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_process/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_process/cmdexec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_process/forkedfunc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_process/killproc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_std.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_vendored_packages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_vendored_packages/apipkg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_vendored_packages/iniconfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/_xmlgen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/py-1.8.1-py3.7.egg/py/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/EGG-INFO/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/EGG-INFO/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/EGG-INFO/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/EGG-INFO/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/EGG-INFO/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/EGG-INFO/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/EGG-INFO/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/EGG-INFO/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/_argcomplete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/_code/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/_code/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/_code/source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/_io/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/_io/saferepr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/assertion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/assertion/rewrite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/assertion/truncate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/assertion/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/cacheprovider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/capture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/config/argparsing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/config/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/config/findpaths.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/debugging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/deprecated.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/doctest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/faulthandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/fixtures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/freeze_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/helpconfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/hookspec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/junitxml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/logging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/mark/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/mark/evaluate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/mark/legacy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/mark/structures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/monkeypatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/nodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/nose.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/outcomes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/pastebin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/pathlib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/pytester.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/python_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/recwarn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/reports.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/resultlog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/runner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/setuponly.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/setupplan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/skipping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/stepwise.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/store.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/terminal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/tmpdir.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/unittest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/warning_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/_pytest/warnings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/pytest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eggs/pytest-5.4.1-py3.7.egg/pytest/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/my-covid-19-estimator-py.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/actions/jest-out/action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/actions/jest-out/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/actions/lhr-out/action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/actions/lhr-out/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/actions/props-out/action.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/actions/props-out/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/gradr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gradr.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimator.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aFrI5Sw3C1xSIlbvuuGxIfUmes" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="estimator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my-covid-19-estimator-py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/estimator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.estimator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9f68605-3739-403d-8710-2dc270d7ab04" name="Default Changelist" comment="" />
+      <created>1586342100345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586342100345</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1320" height="205" key="GridCell.Tab.0.bottom" timestamp="1586600511845">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="205" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1586600511845" />
+    <state width="1320" height="205" key="GridCell.Tab.0.center" timestamp="1586600511845">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="205" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1586600511845" />
+    <state width="1320" height="205" key="GridCell.Tab.0.left" timestamp="1586600511844">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="205" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1586600511844" />
+    <state width="1320" height="205" key="GridCell.Tab.0.right" timestamp="1586600511845">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="205" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1586600511845" />
+    <state width="1320" height="205" key="GridCell.Tab.1.bottom" timestamp="1586600511846">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="205" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1586600511846" />
+    <state width="1320" height="205" key="GridCell.Tab.1.center" timestamp="1586600511846">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="205" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1586600511846" />
+    <state width="1320" height="205" key="GridCell.Tab.1.left" timestamp="1586600511845">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="205" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1586600511845" />
+    <state width="1320" height="205" key="GridCell.Tab.1.right" timestamp="1586600511846">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="205" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1586600511846" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1586342116041">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1586342116041" />
+  </component>
+</project>
