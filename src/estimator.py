@@ -15,7 +15,7 @@ def converter(data):
         raise TypeError
 
 
-def covid19ImpactEstimator(data):
+def estimator(data):
     """
     data: {},  the input data you got
     impact: {},  your best case estimation
@@ -56,19 +56,19 @@ def covid19ImpactEstimator(data):
         "severeImpact": severeImpact
     }
 
-if __name__ == "__main__":
-   data = {
-        "region": {
-            "name": "Africa",
-            "avgAge": 19.7,
-            "avgDailyIncomeInUSD": 5,
-            "avgDailyIncomePopulation": 0.71
-        },
-        "periodType": "days",
-        "timeToElapse": 3,
-        "reportedCases": 674,
-        "population": 66622705,
-        "totalHospitalBeds": 1380614
-   }
-   for key, value in covid19ImpactEstimator(data).items():
-       print("{}:{}".format(key, value))
+#if __name__ == "__main__":
+#   data = {
+#        "region": {
+#            "name": "Africa",
+#            "avgAge": 19.7,
+#            "avgDailyIncomeInUSD": 5,
+#            "avgDailyIncomePopulation": 0.71
+#        },
+#        "periodType": "days",
+#        "timeToElapse": 3,
+#        "reportedCases": 674,
+#        "population": 66622705,
+#        "totalHospitalBeds": 1380614
+#   }
+#   for key, value in estimator(data).items():
+#       print("{}:{}".format(key, value))
