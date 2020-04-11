@@ -26,11 +26,11 @@ def estimator(data):
     if isinstance(data, dict):
         # Challenge 1
         impact["currentlyInfected"] = int(data["reportedCases"]) * 10
-        impact["infectionsByRequestedTime"] = (int(impact["currentlyInfected"]) * pow(2,
-                                                                                      (converter(data) / 3) // 1)) // 1
+        impact["infectionsByRequestedTime"] = int((int(impact["currentlyInfected"]) * pow(2,
+                                                                                      (converter(data) / 3) // 1)) // 1)
         severeImpact["currentlyInfected"] = int(data["reportedCases"]) * 50
-        severeImpact["infectionsByRequestedTime"] = (int(severeImpact["currentlyInfected"]) * pow(2, (
-                converter(data) / 3) // 1)) // 1
+        severeImpact["infectionsByRequestedTime"] = int((int(severeImpact["currentlyInfected"]) * pow(2, (
+                converter(data) / 3) // 1)) // 1)
 
         # Start of Challenge 2
         impact["severeCasesByRequestedTime"] = int((0.15 * impact["infectionsByRequestedTime"]) // 1)
@@ -44,15 +44,15 @@ def estimator(data):
         # End of Challenge 2
 
         # Challenge 3
-        impact["casesForICUByRequestedTime"] = (0.05 * impact["infectionsByRequestedTime"]) // 1
-        impact["casesForVentilatorsByRequestedTime"] = (0.02 * impact["infectionsByRequestedTime"]) // 1
-        impact["dollarsInflight"] = (impact["infectionsByRequestedTime"] * data["region"]["avgDailyIncomeInUSD"] * \
-                                     data["region"]["avgDailyIncomePopulation"] * converter(data)) // 1
+        impact["casesForICUByRequestedTime"] = int((0.05 * impact["infectionsByRequestedTime"]) // 1)
+        impact["casesForVentilatorsByRequestedTime"] = int((0.02 * impact["infectionsByRequestedTime"]) // 1)
+        impact["dollarsInflight"] = int((impact["infectionsByRequestedTime"] * data["region"]["avgDailyIncomeInUSD"] * \
+                                     data["region"]["avgDailyIncomePopulation"] * converter(data)) // 1)
 
-        severeImpact["casesForICUByRequestedTime"] = (0.05 * severeImpact["infectionsByRequestedTime"]) // 1
-        severeImpact["casesForVentilatorsByRequestedTime"] = (0.02 * severeImpact["infectionsByRequestedTime"]) // 1
-        severeImpact["dollarsInflight"] = (severeImpact["infectionsByRequestedTime"] * data["region"][
-            "avgDailyIncomeInUSD"] * data["region"]["avgDailyIncomePopulation"] * converter(data)) // 1
+        severeImpact["casesForICUByRequestedTime"] = int((0.05 * severeImpact["infectionsByRequestedTime"]) // 1)
+        severeImpact["casesForVentilatorsByRequestedTime"] = int((0.02 * severeImpact["infectionsByRequestedTime"]) // 1)
+        severeImpact["dollarsInflight"] = int((severeImpact["infectionsByRequestedTime"] * data["region"][
+            "avgDailyIncomeInUSD"] * data["region"]["avgDailyIncomePopulation"] * converter(data)) // 1)
 
     else:
         raise TypeError("Type incorrect !")
