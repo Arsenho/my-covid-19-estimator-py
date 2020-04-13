@@ -35,11 +35,11 @@ def estimator(data):
         # Start of Challenge 2
         impact["severeCasesByRequestedTime"] = int((0.15 * impact["infectionsByRequestedTime"]) // 1)
         impact["hospitalBedsByRequestedTime"] = int((((int(data.get("totalHospitalBeds"))) * 0.35) - impact[
-            "severeCasesByRequestedTime"]) // 1) + 1
+            "severeCasesByRequestedTime"]))
 
         severeImpact["severeCasesByRequestedTime"] = int((0.15 * severeImpact["infectionsByRequestedTime"]) // 1)
         severeImpact["hospitalBedsByRequestedTime"] = int((((int(data.get("totalHospitalBeds"))) * 0.35) -
-                                                       severeImpact["severeCasesByRequestedTime"]) // 1) + 1
+                                                       severeImpact["severeCasesByRequestedTime"]))
 
         # End of Challenge 2
 
@@ -68,14 +68,14 @@ if __name__ == "__main__":
         "region": {
             "name": "Africa",
             "avgAge": 19.7,
-            "avgDailyIncomeInUSD": 5,
-            "avgDailyIncomePopulation": 0.71
+            "avgDailyIncomeInUSD": 4,
+            "avgDailyIncomePopulation": 0.73
         },
         "periodType": "days",
-        "timeToElapse": 3,
-        "reportedCases": 674,
-        "population": 66622705,
-        "totalHospitalBeds": 1380614
+        "timeToElapse": 38,
+        "reportedCases": 2747,
+        "population": 92931687,
+        "totalHospitalBeds": 678874
    }
    for key, value in estimator(data).items():
        print("{}:{}".format(key, value))
