@@ -46,13 +46,13 @@ def estimator(data):
         # Challenge 3
         impact["casesForICUByRequestedTime"] = int((0.05 * impact["infectionsByRequestedTime"]) // 1)
         impact["casesForVentilatorsByRequestedTime"] = int((0.02 * impact["infectionsByRequestedTime"]) // 1)
-        impact["dollarsInflight"] = int((impact["infectionsByRequestedTime"] * data["region"]["avgDailyIncomeInUSD"] * \
-                                     data["region"]["avgDailyIncomePopulation"] * converter(data)) // 1)
+        impact["dollarsInFlight"] = int(((impact["infectionsByRequestedTime"] * data["region"]["avgDailyIncomeInUSD"] * \
+                                     data["region"]["avgDailyIncomePopulation"]) / converter(data)) // 1)
 
         severeImpact["casesForICUByRequestedTime"] = int((0.05 * severeImpact["infectionsByRequestedTime"]) // 1)
         severeImpact["casesForVentilatorsByRequestedTime"] = int((0.02 * severeImpact["infectionsByRequestedTime"]) // 1)
-        severeImpact["dollarsInflight"] = int((severeImpact["infectionsByRequestedTime"] * data["region"][
-            "avgDailyIncomeInUSD"] * data["region"]["avgDailyIncomePopulation"] * converter(data)) // 1)
+        severeImpact["dollarsInFlight"] = int(((severeImpact["infectionsByRequestedTime"] * data["region"][
+            "avgDailyIncomeInUSD"] * data["region"]["avgDailyIncomePopulation"]) / converter(data)) // 1)
 
     else:
         raise TypeError("Type incorrect !")
