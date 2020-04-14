@@ -47,13 +47,13 @@ class RequestLogMiddleware(object):
                 if isinstance(logs, dict):
                     with open("logs.json", "w") as log_json:
                         cpt = len(logs)
-                        if cpt is not 0:
+                        if cpt != 0:
                             logs["{}".format(cpt + 1)] = log_data
                         else:
                             logs["1"] = log_data
                         log_json.write(json.dumps(logs, indent=4))
                 else:
-                    with open("logs.json", "a") as log_json:
+                    with open("logs.json", "w") as log_json:
                         logs["1"] = log_data
                         log_json.write(json.dumps(logs, indent=4))
         except FileNotFoundError:
