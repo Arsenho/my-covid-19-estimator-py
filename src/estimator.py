@@ -2,6 +2,9 @@ from math import pow
 
 
 def converter(data):
+    """
+    Convert all periods to days
+    """
     days = None
     if isinstance(data, dict):
         if data.get("periodType") == "days":
@@ -47,12 +50,13 @@ def estimator(data):
         impact["casesForICUByRequestedTime"] = int((0.05 * impact["infectionsByRequestedTime"]) // 1)
         impact["casesForVentilatorsByRequestedTime"] = int((0.02 * impact["infectionsByRequestedTime"]) // 1)
         impact["dollarsInFlight"] = int(((impact["infectionsByRequestedTime"] * data["region"]["avgDailyIncomeInUSD"] * \
-                                     data["region"]["avgDailyIncomePopulation"]) / converter(data)) // 1)
+                                          data["region"]["avgDailyIncomePopulation"]) / converter(data)) // 1)
 
         severeImpact["casesForICUByRequestedTime"] = int((0.05 * severeImpact["infectionsByRequestedTime"]) // 1)
         severeImpact["casesForVentilatorsByRequestedTime"] = int((0.02 * severeImpact["infectionsByRequestedTime"]) // 1)
         severeImpact["dollarsInFlight"] = int(((severeImpact["infectionsByRequestedTime"] * data["region"][
             "avgDailyIncomeInUSD"] * data["region"]["avgDailyIncomePopulation"]) / converter(data)) // 1)
+        # End of challenge 3
 
     else:
         raise TypeError("Type incorrect !")
@@ -62,20 +66,3 @@ def estimator(data):
         "impact": impact,
         "severeImpact": severeImpact
     }
-
-if __name__ == "__main__":
-   data = {
-        "region": {
-            "name": "Africa",
-            "avgAge": 19.7,
-            "avgDailyIncomeInUSD": 4,
-            "avgDailyIncomePopulation": 0.73
-        },
-        "periodType": "days",
-        "timeToElapse": 38,
-        "reportedCases": 2747,
-        "population": 92931687,
-        "totalHospitalBeds": 678874
-   }
-   for key, value in estimator(data).items():
-       print("{}:{}".format(key, value))

@@ -1,0 +1,82 @@
+{
+    "1": {
+        "user": "None",
+        "remote_address": "127.0.0.1",
+        "server_hostname": "arseme",
+        "request_method": "GET",
+        "request_path": "/api/v1/on-covid-19/json",
+        "response_status": 200,
+        "response_body": "<<<Not XML>>>",
+        "run_time": 0.7412319183349609
+    },
+    "2": {
+        "user": null,
+        "remote_address": "127.0.0.1",
+        "server_hostname": "arseme",
+        "request_method": "GET",
+        "request_path": "/api/v1/on-covid-19/json",
+        "response_status": 200,
+        "response_body": "<<<Not XML>>>",
+        "run_time": 0.13129258155822754
+    },
+    "3": {
+        "user": null,
+        "remote_address": "127.0.0.1",
+        "server_hostname": "arseme",
+        "request_method": "POST",
+        "request_path": "/api/v1/on-covid-19/json",
+        "response_status": 200,
+        "response_body": "<<<Not XML>>>",
+        "run_time": 0.04007411003112793
+    },
+    "4": {
+        "user": null,
+        "remote_address": "127.0.0.1",
+        "server_hostname": "arseme",
+        "request_method": "GET",
+        "request_path": "/api/v1/on-covid-19/logs",
+        "response_status": 200,
+        "response_body": "<<<Not XML>>>",
+        "run_time": 0.07865571975708008
+    },
+    "5": {
+        "user": null,
+        "remote_address": "127.0.0.1",
+        "server_hostname": "arseme",
+        "request_method": "GET",
+        "request_path": "/api/v1/on-covid-19/logs",
+        "response_status": 200,
+        "response_body": "<<<Not XML>>>",
+        "run_time": 0.07072925567626953
+    },
+    "6": {
+        "user": null,
+        "remote_address": "127.0.0.1",
+        "server_hostname": "arseme",
+        "request_method": "GET",
+        "request_path": "/api/v1/on-covid-19/logs",
+        "response_status": 200,
+        "response_body": "<<<Not XML>>>",
+        "run_time": 0.08849859237670898
+    },
+    "7": {
+        "user": null,
+        "remote_address": "127.0.0.1",
+        "server_hostname": "arseme",
+        "request_method": "GET",
+        "request_path": "/api/v1/on-covid-19/logs",
+        "response_status": 200,
+        "response_body": "<<<Not XML>>>",
+        "run_time": 0.08050870895385742
+    },
+    "8": {
+        "user": null,
+        "remote_address": "127.0.0.1",
+        "server_hostname": "arseme",
+        "request_method": "GET",
+        "request_path": "/api/v1/on-covid-19/logs",
+        "response_status": 200,
+        "response_body": "<<<Not XML>>>",
+        "run_time": 0.02948904037475586
+    }
+}
