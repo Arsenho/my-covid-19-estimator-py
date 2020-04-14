@@ -28,13 +28,19 @@ class EstimatorData(RequestLogViewMixin, APIView):
                 )
                 return response
             else:
-                data = {}
-                response = Response(
-                    data,
-                    status=status.HTTP_200_OK,
-                    content_type='application/json; charset=utf8'
-                )
-                return response
+                if isinstance(request.data, dict):
+                    outputData = estimator(request.data)
+                    if isinstance(outputData, dict):
+                        response = Response(
+                            outputData,
+                            status=status.HTTP_200_OK,
+                            content_type='application/json; charset=utf8'
+                        )
+                        return response
+                    else:
+                        pass
+                else:
+                    pass
         else:
             pass
 
@@ -70,13 +76,19 @@ class EstimatorDataXML(RequestLogViewMixin, APIView):
                 )
                 return response
             else:
-                data = {}
-                response = Response(
-                    data,
-                    status=status.HTTP_200_OK,
-                    content_type='application/xml; charset=utf8'
-                )
-                return response
+                if isinstance(request.data, dict):
+                    outputData = estimator(request.data)
+                    if isinstance(outputData, dict):
+                        response = Response(
+                            outputData,
+                            status=status.HTTP_200_OK,
+                            content_type='application/xml; charset=utf8'
+                        )
+                        return response
+                    else:
+                        pass
+                else:
+                    pass
         else:
             pass
 
@@ -109,14 +121,14 @@ class LogsOutput(RequestLogViewMixin, APIView):
                         lines = ""
                         for key, value in logs.items():
                             #print(value)
-                            line = "{}\t{}\t{}\t{}".format(
+                            line = "{} {} {} {}".format(
                                 value["request_method"],
                                 value["request_path"],
                                 value["response_status"],
                                 str(value["run_time"]) + "ms"
                             )
                             #print(line)
-                            lines += "\n" + line
+                            lines += line + "\n"
                         print(lines)
                         try:
                             with open("logs.txt", "w") as logs_txt:
@@ -128,7 +140,7 @@ class LogsOutput(RequestLogViewMixin, APIView):
                                 response = Response(
                                     logs_txt.read(),
                                     status=status.HTTP_200_OK,
-                                    content_type="text/plain"
+                                    content_type='text/plain; charset=utf8'
                                 )
                                 return response
                         except FileNotFoundError:
@@ -139,3 +151,5 @@ class LogsOutput(RequestLogViewMixin, APIView):
             except FileNotFoundError:
                 print("Le fichier logs est introuvable")
                 return Response("Le fichier logs est introuvable", status=status.HTTP_404_NOT_FOUND)
+        else:
+            pass
