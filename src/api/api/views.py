@@ -1,11 +1,8 @@
 import time
-
-from django.core.signals import request_started, request_finished
 from rest_framework import status
-from rest_framework.decorators import api_view, renderer_classes
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.request import Request, HttpRequest
+from rest_framework.request import Request
 from rest_framework_xml.renderers import XMLRenderer
 import json
 from .mixins import RequestLogViewMixin
@@ -160,21 +157,33 @@ class LogsOutput(RequestLogViewMixin, APIView):
             try:
                 with open("logs.json") as log:
                     logs = json.load(log)
+                    print(type(logs))
+                    #print(logs)
                     if isinstance(logs, dict):
-                        print(json.dumps(logs, indent=4))
                         lines = ""
                         for key, value in logs.items():
-                            line = "{} {} {} {}".format(
+                            #print(value)
+                            line = "{}\t{}\t{}\t{}".format(
                                 value["request_method"],
                                 value["request_path"],
                                 value["response_status"],
-                                value["run_time"]
+                                str(value["run_time"]) + "ms"
                             )
-                            lines.join("\n"+line)
+                            #print(line)
+                            lines += "\n" + line
                         print(lines)
-                        response = Response(json.dumps(logs), status=status.HTTP_200_OK)
-                        #response.content_type = "application/json"
-                        return response
+                        try:
+                            with open("logs.txt", "w") as logs_txt:
+                                logs_txt.write(lines)
+                        except FileNotFoundError:
+                            print("Fichier logs.txt introuvable")
+                        try:
+                            with open("logs.txt") as logs_txt:
+                                response = Response(logs_txt.read(), status=status.HTTP_200_OK, content_type="text/plain")
+                                # response.content_type = "application/json"
+                                return response
+                        except FileNotFoundError:
+                            print("Fichier logs.txt introuvable")
                     else:
                         pass
 

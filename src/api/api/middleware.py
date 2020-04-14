@@ -7,6 +7,7 @@ logs = {}
 class RequestLogMiddleware(object):
     def process_request(self, request):
         request.start_time = time.time()
+        #print( request.start_time, time.ctime(request.start_time))
 
     def process_response(self, request, response):
         global logs
@@ -37,7 +38,7 @@ class RequestLogMiddleware(object):
             'response_status': response.status_code,
             'response_body': response_body,
 
-            'run_time': time.time() - request.start_time,
+            'run_time': int((time.time() - request.start_time) * 1000) ,
         }
 
         # save log_data in some way
