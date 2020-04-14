@@ -4,6 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.request import Request
 from rest_framework_xml.renderers import XMLRenderer
+from rest_framework.renderers import JSONRenderer
 import json
 from .mixins import RequestLogViewMixin
 
@@ -101,19 +102,28 @@ def estimator(data):
 
 # Create your views here.
 class EstimatorData(RequestLogViewMixin, APIView):
-
     def get(self, request):
         global compteur, outputData
 
         if isinstance(request, Request):
             compteur += 1
             if outputData is not None:
-                response = Response(outputData, status=status.HTTP_200_OK)
+                response = Response(
+                    outputData,
+                    status=status.HTTP_200_OK,
+                    content_type='application/json; charset=utf8'
+                )
                 return response
             else:
                 data = {}
-                response = Response(data, status=status.HTTP_200_OK)
+                response = Response(
+                    data,
+                    status=status.HTTP_200_OK,
+                    content_type='application/json; charset=utf8'
+                )
                 return response
+        else:
+            pass
 
     def post(self, request):
         global  compteur, outputData
@@ -121,8 +131,16 @@ class EstimatorData(RequestLogViewMixin, APIView):
         if isinstance(request.data, dict):
             outputData = estimator(request.data)
             if isinstance(outputData, dict):
-                response = Response(outputData, status=status.HTTP_200_OK)
+                response = Response(
+                    outputData,
+                    status=status.HTTP_200_OK,
+                    content_type='application/json; charset=utf8'
+                )
                 return response
+            else:
+                pass
+        else:
+            pass
 
 
 class EstimatorDataXML(RequestLogViewMixin, APIView):
@@ -134,12 +152,22 @@ class EstimatorDataXML(RequestLogViewMixin, APIView):
         if isinstance(request, Request):
             compteur += 1
             if outputData is not None:
-                response = Response(outputData, status=status.HTTP_200_OK)
+                response = Response(
+                    outputData,
+                    status=status.HTTP_200_OK,
+                    content_type='application/xml; charset=utf8'
+                )
                 return response
             else:
                 data = {}
-                response = Response(data, status=status.HTTP_200_OK)
+                response = Response(
+                    data,
+                    status=status.HTTP_200_OK,
+                    content_type='application/xml; charset=utf8'
+                )
                 return response
+        else:
+            pass
 
     def post(self, request):
         global  compteur, outputData
@@ -147,8 +175,16 @@ class EstimatorDataXML(RequestLogViewMixin, APIView):
         if isinstance(request.data, dict):
             outputData = estimator(request.data)
             if isinstance(outputData, dict):
-                response = Response(outputData, status=status.HTTP_200_OK)
+                response = Response(
+                    outputData,
+                    status=status.HTTP_200_OK,
+                    content_type='application/xml; charset=utf8'
+                )
                 return response
+            else:
+                pass
+        else:
+            pass
 
 
 class LogsOutput(RequestLogViewMixin, APIView):
@@ -179,8 +215,11 @@ class LogsOutput(RequestLogViewMixin, APIView):
                             print("Fichier logs.txt introuvable")
                         try:
                             with open("logs.txt") as logs_txt:
-                                response = Response(logs_txt.read(), status=status.HTTP_200_OK, content_type="text/plain")
-                                # response.content_type = "application/json"
+                                response = Response(
+                                    logs_txt.read(),
+                                    status=status.HTTP_200_OK,
+                                    content_type="text/plain"
+                                )
                                 return response
                         except FileNotFoundError:
                             print("Fichier logs.txt introuvable")

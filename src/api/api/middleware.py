@@ -1,8 +1,7 @@
 import socket
 import time
 import json
-
-logs = {}
+from json import JSONDecodeError
 
 class RequestLogMiddleware(object):
     def process_request(self, request):
@@ -10,7 +9,6 @@ class RequestLogMiddleware(object):
         #print( request.start_time, time.ctime(request.start_time))
 
     def process_response(self, request, response):
-        global logs
 
         if response['content-type'] == 'application/json':
             if getattr(response, 'streaming', False):
@@ -42,20 +40,27 @@ class RequestLogMiddleware(object):
         }
 
         # save log_data in some way
+        logs = {}
         try:
             with open("logs.json") as log:
-                logs = json.load(log)
-                if isinstance(logs, dict):
-                    with open("logs.json", "w") as log_json:
-                        cpt = len(logs)
-                        if cpt != 0:
-                            logs["{}".format(cpt + 1)] = log_data
-                        else:
-                            logs["1"] = log_data
-                        log_json.write(json.dumps(logs, indent=4))
-                else:
+                try:
+                    logs = json.load(log)
+                    if isinstance(logs, dict):
+                        with open("logs.json", "w") as log_json:
+                            cpt = len(logs)
+                            if cpt != 0:
+                                logs["{}".format(cpt + 1)] = log_data
+                            else:
+                                logs["1"] = log_data
+                                #data = json.dumps(logs, indent=4)
+                                #print(type(data))
+                            log_json.write(json.dumps(logs, indent=4))
+                    else:
+                        pass
+                except JSONDecodeError:
                     with open("logs.json", "w") as log_json:
                         logs["1"] = log_data
+                        print(type(logs))
                         log_json.write(json.dumps(logs, indent=4))
         except FileNotFoundError:
             print("Fichier introuvable")

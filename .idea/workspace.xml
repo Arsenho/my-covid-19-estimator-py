@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9f68605-3739-403d-8710-2dc270d7ab04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/estimator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/logs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/logs.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +33,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src_1" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test.TestEstimator.test_challenge_1">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src_1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.views">
     <configuration name="estimator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my-covid-19-estimator-py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -44,6 +57,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/estimator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my-covid-19-estimator-py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/restapi/api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/restapi/api/views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,9 +116,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.estimator" />
         <item itemvalue="Python tests.Unittests for test.TestEstimator.test_challenge_1" />
         <item itemvalue="Python tests.Unittests in test.py" />
-        <item itemvalue="Python.estimator" />
       </list>
     </recent_temporary>
   </component>
@@ -102,22 +137,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1320" height="279" key="GridCell.Tab.0.bottom" timestamp="1586612737302">
+    <state width="1320" height="279" key="GridCell.Tab.0.bottom" timestamp="1586780390031">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="279" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1586612737302" />
-    <state width="1320" height="279" key="GridCell.Tab.0.center" timestamp="1586612737301">
+    <state width="1320" height="279" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1586780390031" />
+    <state width="1320" height="279" key="GridCell.Tab.0.center" timestamp="1586780390030">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="279" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1586612737301" />
-    <state width="1320" height="279" key="GridCell.Tab.0.left" timestamp="1586612737293">
+    <state width="1320" height="279" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1586780390030" />
+    <state width="1320" height="279" key="GridCell.Tab.0.left" timestamp="1586780390030">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="279" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1586612737293" />
-    <state width="1320" height="279" key="GridCell.Tab.0.right" timestamp="1586612737302">
+    <state width="1320" height="279" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1586780390030" />
+    <state width="1320" height="279" key="GridCell.Tab.0.right" timestamp="1586780390030">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="279" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1586612737302" />
+    <state width="1320" height="279" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1586780390030" />
     <state width="1320" height="205" key="GridCell.Tab.1.bottom" timestamp="1586600511846">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -138,5 +173,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1586342116041" />
+    <state x="408" y="256" width="540" height="289" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1586776816379">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="408" y="256" width="540" height="289" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.741@0.27.1366.741" timestamp="1586776816379" />
   </component>
 </project>
