@@ -14,6 +14,7 @@ except ImportError:
 outputData = None
 logs = {}
 
+
 # Create your views here.
 class EstimatorData(RequestLogViewMixin, APIView):
     def get(self, request):
@@ -28,7 +29,34 @@ class EstimatorData(RequestLogViewMixin, APIView):
                 )
                 return response
             else:
-                if isinstance(request.data, dict):
+                if (
+                        request.data["data-period-type"] and
+                        request.data["data-time-to-elapse"] and
+                        request.data["data-reported-cases"] and
+                        request.data["data-population"] and
+                        request.data["data-total-hospital-beds"]
+                ):
+                    input_data = {
+                        "region": {
+                            "name": "Africa",
+                            "avgAge": 19.7,
+                            "avgDailyIncomeInUSD": 4,
+                            "avgDailyIncomePopulation": 0.73
+                        },
+                        "periodType": request.data["data-period-type"],
+                        "timeToElapse": int(request.data["data-time-to-elapse"]),
+                        "reportedCases": int(request.data["data-reported-cases"]),
+                        "population": int(request.data["data-population"]),
+                        "totalHospitalBeds": int(request.data["data-total-hospital-beds"])
+                    }
+                    outputData = estimator(input_data)
+                    response = Response(
+                        outputData,
+                        status=status.HTTP_200_OK,
+                        content_type='application/json; charset=utf8'
+                    )
+                    return response
+                else:
                     outputData = estimator(request.data)
                     if isinstance(outputData, dict):
                         response = Response(
@@ -37,16 +65,15 @@ class EstimatorData(RequestLogViewMixin, APIView):
                             content_type='application/json; charset=utf8'
                         )
                         return response
-                    else:
-                        pass
-                else:
-                    pass
+
         else:
             pass
 
     def post(self, request):
         global outputData
-        if isinstance(request.data, dict):
+
+        if isinstance(request, Request):
+
             outputData = estimator(request.data)
             if isinstance(outputData, dict):
                 response = Response(
@@ -55,8 +82,6 @@ class EstimatorData(RequestLogViewMixin, APIView):
                     content_type='application/json; charset=utf8'
                 )
                 return response
-            else:
-                pass
         else:
             pass
 
@@ -65,7 +90,7 @@ class EstimatorDataXML(RequestLogViewMixin, APIView):
     renderer_classes = (XMLRenderer,)
 
     def get(self, request):
-        global  outputData
+        global outputData
 
         if isinstance(request, Request):
             if outputData is not None:
@@ -76,7 +101,34 @@ class EstimatorDataXML(RequestLogViewMixin, APIView):
                 )
                 return response
             else:
-                if isinstance(request.data, dict):
+                if (
+                        request.data["data-period-type"] and
+                        request.data["data-time-to-elapse"] and
+                        request.data["data-reported-cases"] and
+                        request.data["data-population"] and
+                        request.data["data-total-hospital-beds"]
+                ):
+                    input_data = {
+                        "region": {
+                            "name": "Africa",
+                            "avgAge": 19.7,
+                            "avgDailyIncomeInUSD": 4,
+                            "avgDailyIncomePopulation": 0.73
+                        },
+                        "periodType": request.data["data-period-type"],
+                        "timeToElapse": int(request.data["data-time-to-elapse"]),
+                        "reportedCases": int(request.data["data-reported-cases"]),
+                        "population": int(request.data["data-population"]),
+                        "totalHospitalBeds": int(request.data["data-total-hospital-beds"])
+                    }
+                    outputData = estimator(input_data)
+                    response = Response(
+                        outputData,
+                        status=status.HTTP_200_OK,
+                        content_type='application/xml; charset=utf8'
+                    )
+                    return response
+                else:
                     outputData = estimator(request.data)
                     if isinstance(outputData, dict):
                         response = Response(
@@ -85,16 +137,14 @@ class EstimatorDataXML(RequestLogViewMixin, APIView):
                             content_type='application/xml; charset=utf8'
                         )
                         return response
-                    else:
-                        pass
-                else:
-                    pass
+
         else:
             pass
 
     def post(self, request):
         global outputData
-        if isinstance(request.data, dict):
+        if isinstance(request, Request):
+
             outputData = estimator(request.data)
             if isinstance(outputData, dict):
                 response = Response(
@@ -116,19 +166,19 @@ class LogsOutput(RequestLogViewMixin, APIView):
                 with open("logs.json") as log:
                     logs = json.load(log)
                     print(type(logs))
-                    #print(logs)
+                    # print(logs)
                     if isinstance(logs, dict):
                         lines = ""
                         for key, value in logs.items():
-                            #print(value)
-                            line = "{} {} {} {}".format(
+                            # print(value)
+                            line = "{}\t\t{}\t\t{}\t\t{}\n".format(
                                 value["request_method"],
                                 value["request_path"],
                                 value["response_status"],
-                                str(value["run_time"]) + "ms"
+                                str(value["run_time"]) + " ms"
                             )
-                            #print(line)
-                            lines += line + "\n"
+                            # print(line)
+                            lines += line
                         print(lines)
                         try:
                             with open("logs.txt", "w") as logs_txt:
