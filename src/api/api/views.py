@@ -21,50 +21,15 @@ class EstimatorData(RequestLogViewMixin, APIView):
         global outputData
 
         if isinstance(request, Request):
-            if outputData is not None:
+
+            outputData = estimator(request.data)
+            if isinstance(outputData, dict):
                 response = Response(
                     outputData,
                     status=status.HTTP_200_OK,
                     content_type='application/json; charset=utf8'
                 )
                 return response
-            else:
-                if (
-                        request.data["data-period-type"] and
-                        request.data["data-time-to-elapse"] and
-                        request.data["data-reported-cases"] and
-                        request.data["data-population"] and
-                        request.data["data-total-hospital-beds"]
-                ):
-                    input_data = {
-                        "region": {
-                            "name": "Africa",
-                            "avgAge": 19.7,
-                            "avgDailyIncomeInUSD": 4,
-                            "avgDailyIncomePopulation": 0.73
-                        },
-                        "periodType": request.data["data-period-type"],
-                        "timeToElapse": int(request.data["data-time-to-elapse"]),
-                        "reportedCases": int(request.data["data-reported-cases"]),
-                        "population": int(request.data["data-population"]),
-                        "totalHospitalBeds": int(request.data["data-total-hospital-beds"])
-                    }
-                    outputData = estimator(input_data)
-                    response = Response(
-                        outputData,
-                        status=status.HTTP_200_OK,
-                        content_type='application/json; charset=utf8'
-                    )
-                    return response
-                else:
-                    outputData = estimator(request.data)
-                    if isinstance(outputData, dict):
-                        response = Response(
-                            outputData,
-                            status=status.HTTP_200_OK,
-                            content_type='application/json; charset=utf8'
-                        )
-                        return response
 
         else:
             pass
@@ -93,50 +58,15 @@ class EstimatorDataXML(RequestLogViewMixin, APIView):
         global outputData
 
         if isinstance(request, Request):
-            if outputData is not None:
+
+            outputData = estimator(request.data)
+            if isinstance(outputData, dict):
                 response = Response(
                     outputData,
                     status=status.HTTP_200_OK,
                     content_type='application/xml; charset=utf8'
                 )
                 return response
-            else:
-                if (
-                        request.data["data-period-type"] and
-                        request.data["data-time-to-elapse"] and
-                        request.data["data-reported-cases"] and
-                        request.data["data-population"] and
-                        request.data["data-total-hospital-beds"]
-                ):
-                    input_data = {
-                        "region": {
-                            "name": "Africa",
-                            "avgAge": 19.7,
-                            "avgDailyIncomeInUSD": 4,
-                            "avgDailyIncomePopulation": 0.73
-                        },
-                        "periodType": request.data["data-period-type"],
-                        "timeToElapse": int(request.data["data-time-to-elapse"]),
-                        "reportedCases": int(request.data["data-reported-cases"]),
-                        "population": int(request.data["data-population"]),
-                        "totalHospitalBeds": int(request.data["data-total-hospital-beds"])
-                    }
-                    outputData = estimator(input_data)
-                    response = Response(
-                        outputData,
-                        status=status.HTTP_200_OK,
-                        content_type='application/xml; charset=utf8'
-                    )
-                    return response
-                else:
-                    outputData = estimator(request.data)
-                    if isinstance(outputData, dict):
-                        response = Response(
-                            outputData,
-                            status=status.HTTP_200_OK,
-                            content_type='application/xml; charset=utf8'
-                        )
-                        return response
 
         else:
             pass
